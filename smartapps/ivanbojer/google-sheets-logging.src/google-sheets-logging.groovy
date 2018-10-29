@@ -15,8 +15,8 @@
 
 definition(
     name: "${appName()}",
-    namespace: "cschwer",
-    author: "Charles Schwer",
+    namespace: "ivanbojer",
+    author: "Ivan Bojer",
     description: "Log to Google Sheets",
     category: "My Apps",
     singleInstance: true,
@@ -41,7 +41,7 @@ def startPage() {
 def parentPage() {
     return dynamicPage(name: "parentPage", title: "", nextPage: "", install: true, uninstall: true) {
         section("Create a new logging automation.") {
-            app(name: "childApps", appName: appName(), namespace: "cschwer", title: "Google Sheets Logging Automation", multiple: true)
+            app(name: "childApps", appName: appName(), namespace: "ivanbojer", title: "Google Sheets Logging Automation", multiple: true)
         }
 
         section("About") {
